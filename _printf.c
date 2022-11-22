@@ -4,10 +4,10 @@
 #include "main.h"
 #include <stddef.h>
 /**
-  * _printf - recreates the prinft function
-  * @format: string with format specifier
-  * Return: number of characters printed
-  */
+ * _printf - recreates the printf function
+ * @format: string with format specifier
+ * Return: number of characters printed
+ */
 int _printf(const char *format, ...)
 {
 	if (format != NULL)
@@ -35,15 +35,15 @@ int _printf(const char *format, ...)
 					if (m)
 						count += m(args);
 					else
-						count = _putchar(format[i])
-							+ _puchar
-							(format[i + 1]);
+						count = _putchar(format[i]) + _putchar(format[i + 1]);
 					i += 2;
 				}
 			}
 			else
+			{
 				count += _putchar(format[i]);
 				i++;
+			}
 		}
 		va_end(args);
 		return (count);
