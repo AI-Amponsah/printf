@@ -52,4 +52,14 @@ int print_percent(va_list args)
 	}
 	return (*str);
 }
+}
+/**
+ * print_i - prints integer
+ * @args: integer argument
+ * Return: the decimal function
+ */
 
+int print_i(va_list args)
+{
+	return (print_d(args));
+}
