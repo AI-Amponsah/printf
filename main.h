@@ -13,6 +13,6 @@ typedef struct specifier
 	int (*f)(va_list);
 }spec;
 int _printf(const char *format, ...);
-
+int print_c(va_list args);
 
 #endif
